@@ -1,0 +1,14 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - uses: actions/checkout@v2
+      - name: OCL Validation Action
+        uses: actions/ocl-validation-action@v1
+        with:
+          metamodel: 'model/graph.ecore'
+          model: 'model/graph-example.ecore'
+          constraints: 'constraints/constraints.ocl'
