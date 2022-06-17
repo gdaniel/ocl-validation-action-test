@@ -10,5 +10,5 @@ jobs:
         uses: gdaniel/ocl-validation-action@v2
         with:
           metamodel: 'model/graph.ecore'
-          model: 'model/graph-example.ecore'
+          model: 'model/graph-example.xmi'
           constraints: 'constraints/constraints.ocl'
