@@ -1,9 +1,9 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  ocl_validation:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: OCL Validation
     steps:
       - uses: actions/checkout@v2
       - name: OCL Validation Action
