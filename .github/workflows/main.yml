@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: OCL Validation Action
-        uses: gdaniel/ocl-validation-action@v2
+        uses: gdaniel/ocl-validation-action@v1
         with:
           metamodel: 'model/graph.ecore'
           model: 'model/graph-example.xmi'
